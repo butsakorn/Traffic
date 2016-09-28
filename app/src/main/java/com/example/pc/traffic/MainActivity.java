@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }   //createListView
+    private void myIntentToDetail(int intClick){
+        Intent objIntent = new Intent(MainActivity.this, ShowDetailActivity.class);
+        objIntent.putExtra("click", intClick);
+        startActivity(objIntent);
+    }
+
 public  void  ClickAboutMe (View view){
         Intent objIntent = new Intent(Intent.ACTION_VIEW);
         objIntent.setData(Uri.parse("http://www.facebook.com"));
