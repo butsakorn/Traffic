@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        
     }   //createListView
     private void myIntentToDetail(int intClick){
         Intent objIntent = new Intent(MainActivity.this, ShowDetailActivity.class);
